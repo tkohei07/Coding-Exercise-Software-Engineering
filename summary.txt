@@ -1,0 +1,23 @@
+1. Why did you choose the tools, libraries, and language you used for the coding exercise? 
+
+I decided to use C++ for the coding exercise primarily because of my previous experience working as a software engineer with the language. I am familiar with its syntax and features, which allowed me to be more productive during the coding process. Additionally, C++ is known for its high performance and efficient processing capabilities, which is particularly important when working with large datasets or when optimizing code for speed. I appreciate the use of references in C++, which allows me to maintain consistency in variable values without having to rely solely on member variables. Overall, I believe that C++ was a good choice for this project. 
+
+
+2. What are the advantages and disadvantages of your solution? 
+
+- Advantages
+
+The "calculateNegativeValue" method's time complexity is improved from O(n^2) to O(n) by using the "non_zero_idx". As a result, the overall time complexity of the program is O(nlogn) due to the sorting algorithm in "main.cpp". If the "non_zero_idx" was not used and the negative value was calculated from the oldest transaction every time, the worst-case time complexity would be O(n^2). Therefore, using "non_zero_idx" is crucial in optimizing the program's time complexity. 
+In addition, I believe that the code accounts for various edge cases, including scenarios where the "spend point" exceeds the available balance, cases where the file format is incorrect, and so on. 
+
+- Disadvantage 
+
+While the "calculateNegativePoint" and "calculateSpendingPoint" methods in the code are functional, they could be improved for simplicity and conciseness. Currently, the negative value is calculated first and then the spending point is calculated. However, there may be more efficient and clearer ways to accomplish these tasks. As such, the methods could be reviewed and optimized for better performance and readability. 
+Additionally, it is possible to further enhance the program by adding more checks for exceptional cases. Depending on the requirements, it may be beneficial to handle situations where one or both columns of points or date are in the wrong format, instead of aborting the program. For example, the program could be modified to skip any transactions with incorrect formats, rather than terminating the execution. Additionally, more detailed error messages could be added to help users identify and correct any issues that arise during the csv reading process. 
+
+
+3. What has been a favorite school/personal project thus far? What about it that challenged you? 
+
+One of my favorite projects in school was building an imitation Database Management System from the ground up using C++. This project challenged me in many ways, particularly in trying to understand how a database works at a lower level. 
+I had no prior knowledge of the internal workings of a database, so it was a steep learning curve for me. However, I found the challenge of understanding and implementing the different components of a database incredibly satisfying. 
+Working with a team on this project also presented its own set of challenges. Other team members were not familiar with C++, so I had to take on a mentorship role, not just in completing my own tasks but in advising them on how to use the language effectively. Overall, this project was a great learning experience that pushed me to expand my knowledge and skills in a variety of areas.
